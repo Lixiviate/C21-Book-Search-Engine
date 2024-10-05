@@ -25,7 +25,7 @@ const startApolloServer = async () => {
     "/graphql",
     expressMiddleware(server, {
       context: authMiddleware,
-    })
+    }),
   );
 
   if (process.env.NODE_ENV === "production") {
