@@ -2,9 +2,25 @@
 
 ## Project Description
 
+This is a book search engine that allows users to search for books using the Google Books API. The search results are displayed in a list, and users can click on a book to view more details. The application is built using React and Apollo Client. The application is deployed on Render.
+
 ## Features
 
+- Search for books using the Google Books API
+- View search results in a list
+- Click on a book to view more details
+- Save books to a list
+- Remove books from the list
+
 ## Usage
+
+To use the application, follow these steps:
+
+1. Enter a search term in the search bar and click the search button.
+2. The search results will be displayed in a list.
+3. Click on a book to view more details.
+4. To save a book, click the "Save" button.
+5. To remove a book from the list, click the "Remove" button.
 
 ## Link to Demo + Example(s)
 
