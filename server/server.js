@@ -14,18 +14,18 @@ const server = new ApolloServer({
   resolvers,
 });
 
-// Create a new instance of an Apollo server with the GraphQL schema
+// Create a new instance of an Apollo Server with the GraphQL schema
 const startApolloServer = async () => {
   await server.start();
 
-  app.use(express.urlencoded({ extended: true }));
+  app.use(express.urlencoded({ extended: false }));
   app.use(express.json());
 
   app.use(
     "/graphql",
     expressMiddleware(server, {
       context: authMiddleware,
-    }),
+    })
   );
 
   if (process.env.NODE_ENV === "production") {
